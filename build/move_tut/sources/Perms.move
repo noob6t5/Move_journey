@@ -27,7 +27,7 @@ module my_addr::Perms {
         (perms & DELETE) != 0        // true if bit2 is ON
     }
 
-    // flip permission — XOR magic
+    // flip permission — XOR
     public fun toggle_delete(perms: u8): u8 {
         perms ^ DELETE
     }
